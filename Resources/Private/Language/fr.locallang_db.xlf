@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-17T21:27:47Z">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-07-17T21:27:47Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
 		<trans-unit id="tx_cbwishlist_domain_model_gift" approved="yes" xml:space="preserve">
 			<source>Gift</source>
-			<target>Geschenk</target>
+			<target>Cadeau</target>
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.description" approved="yes" xml:space="preserve">
 			<source>Description</source>
-			<target>Beschreibung</target>
-		</trans-unit>
-		<trans-unit id="tx_cbwishlist_domain_model_gift.estprice" approved="yes" xml:space="preserve">
-			<source></source>
-			<target>Geschätzer Preis</target>
+			<target>Description</target>
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.name" approved="yes" xml:space="preserve">
 			<source>Name</source>
-			<target>Name</target>
+			<target>Nom</target>
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.price" approved="yes" xml:space="preserve">
 			<source>Price</source>
-			<target>Preis</target>
+			<target>Prix</target>
 		</trans-unit>
 		</body>
 	</file>
