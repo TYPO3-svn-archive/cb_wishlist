@@ -1,0 +1,14 @@
+plugin.tx_cbwishlist {
+	view {
+		# cat=plugin.tx_cbwishlist/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:cb_wishlist/Resources/Private/Templates/
+		# cat=plugin.tx_cbwishlist/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:cb_wishlist/Resources/Private/Partials/
+		# cat=plugin.tx_cbwishlist/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:cb_wishlist/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_cbwishlist//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

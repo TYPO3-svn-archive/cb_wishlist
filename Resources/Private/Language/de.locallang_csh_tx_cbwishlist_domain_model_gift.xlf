@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-17T20:24:31Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="description.description" approved="yes" xml:space="preserve">
+			<source>Description</source>
+			<target>Beschreibung</target>
+		</trans-unit>
+		<trans-unit id="estprice.description" approved="yes" xml:space="preserve">
+			<source></source>
+			<target>Geschätzer Preis</target>
+		</trans-unit>
+		<trans-unit id="name.description" approved="yes" xml:space="preserve">
+			<source>Name</source>
+			<target>Name</target>
+		</trans-unit>
+		<trans-unit id="price.description" approved="yes" xml:space="preserve">
+			<source>Price</source>
+			<target>Preis</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
