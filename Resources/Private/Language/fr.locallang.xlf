@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-07-28T17:33:17Z">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-07-30T21:10:20Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+		<trans-unit id="back.to.list" approved="yes" xml:space="preserve">
+			<source></source>
+			<target>Retour à la liste</target>
+		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift" approved="yes" xml:space="preserve">
 			<source>Gift</source>
 			<target>Cadeau</target>
