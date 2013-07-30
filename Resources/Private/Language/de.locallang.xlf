@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-17T21:27:51Z">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-28T17:33:17Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -16,6 +16,10 @@
 		<trans-unit id="tx_cbwishlist_domain_model_gift.estprice" approved="yes" xml:space="preserve">
 			<source></source>
 			<target>Geschätzer Preis</target>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_gift.image" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>Bild</target>
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.name" approved="yes" xml:space="preserve">
 			<source>Name</source>

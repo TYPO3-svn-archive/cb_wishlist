@@ -100,5 +100,22 @@ class GiftTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 		);
 	}
 	
+	/**
+	 * @test
+	 */
+	public function getImageReturnsInitialValueForString() { }
+
+	/**
+	 * @test
+	 */
+	public function setImageForStringSetsImage() { 
+		$this->fixture->setImage('Conceived at T3CON10');
+
+		$this->assertSame(
+			'Conceived at T3CON10',
+			$this->fixture->getImage()
+		);
+	}
+	
 }
 ?>

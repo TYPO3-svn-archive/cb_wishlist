@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="hu" datatype="plaintext" original="messages" date="2013-07-17T21:27:43Z">
+	<file source-language="en" target-language="hu" datatype="plaintext" original="messages" date="2013-07-28T17:34:14Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
 		<trans-unit id="description.description" approved="yes" xml:space="preserve">
 			<source>Description</source>
-			<target>leírás</target>
+			<target>magyarázat</target>
+		</trans-unit>
+		<trans-unit id="image.description" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>kép</target>
 		</trans-unit>
 		<trans-unit id="name.description" approved="yes" xml:space="preserve">
 			<source>Name</source>

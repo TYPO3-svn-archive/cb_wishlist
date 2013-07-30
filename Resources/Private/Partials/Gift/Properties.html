@@ -20,7 +20,15 @@
 			<f:translate key="tx_cbwishlist_domain_model_gift.description" />
 		</td>
 		<td>
-			{gift.description}
+			<f:format.html parseFuncTSPath="lib.parseFunc">{gift.description}</f:format.html>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_cbwishlist_domain_model_gift.image" />
+		</td>
+		<td>
+			<f:image src="/fileadmin/Wishlist_Img/{gift.image}" width="200" alt="" />
 		</td>
 	</tr>
 </table>

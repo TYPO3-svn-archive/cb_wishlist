@@ -56,6 +56,13 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $description;
 
 	/**
+	 * Image
+	 *
+	 * @var \string
+	 */
+	protected $image;
+
+	/**
 	 * Returns the name
 	 *
 	 * @return \string $name
@@ -110,6 +117,25 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setDescription($description) {
 		$this->description = $description;
+	}
+
+	/**
+	 * Returns the image
+	 *
+	 * @return \string $image
+	 */
+	public function getImage() {
+		return $this->image;
+	}
+
+	/**
+	 * Sets the image
+	 *
+	 * @param \string $image
+	 * @return void
+	 */
+	public function setImage($image) {
+		$this->image = $image;
 	}
 
 }

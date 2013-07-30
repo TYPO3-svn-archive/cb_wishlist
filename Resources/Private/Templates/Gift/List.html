@@ -12,22 +12,19 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
+
 <f:flashMessages />
 
 <table  class="tx_cbwishlist" >
 	<tr>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.name" /></th>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.price" /></th>
-		<th><f:translate key="tx_cbwishlist_domain_model_gift.description" /></th>
-		<th> </th>
-		<th> </th>
 	</tr>
 
 	<f:for each="{gifts}" as="gift">
 		<tr>
 			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.price}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.description}</f:link.action></td>
+			<td>{gift.price}</td>
 		</tr>
 	</f:for>
 </table>
