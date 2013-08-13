@@ -12,3 +12,14 @@ plugin.tx_cbwishlist {
 		storagePid =
 	}
 }
+
+module.tx_cbwishlist {
+	view {
+		 # cat=module.tx_cbwishlist/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:cb_wishlist/Resources/Private/Backend/Templates/
+		 # cat=plugin.ttx_cbwishlist/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:cb_wishlist/Resources/Private/Partials/
+		 # cat=plugin.tx_cbwishlist/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:cb_wishlist/Resources/Private/Backend/Layouts/
+	}
+}

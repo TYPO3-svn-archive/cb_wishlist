@@ -24,6 +24,8 @@ namespace TYPO3\CbWishlist\Domain\Repository;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+
 /**
  *
  *
@@ -32,6 +34,8 @@ namespace TYPO3\CbWishlist\Domain\Repository;
  *
  */
 class GiftRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
+
+	protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
 
 }
 ?>

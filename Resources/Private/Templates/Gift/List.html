@@ -15,18 +15,20 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
+<f:widget.paginate objects="{gifts}" as="paginatedGitfs" configuration="{itemsPerPage: settings.giftsPerPage insertAbove: 1 insertBelow: 0}">
 <table  class="tx_cbwishlist" >
 	<tr>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.name" /></th>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.price" /></th>
 	</tr>
 
-	<f:for each="{gifts}" as="gift">
+	<f:for each="{paginatedGitfs}" as="gift">
 		<tr>
 			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.name}</f:link.action></td>
 			<td>{gift.price}</td>
 		</tr>
 	</f:for>
 </table>
+</f:widget.paginate>
 
 </f:section>

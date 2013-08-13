@@ -1,4 +1,13 @@
 plugin.tx_cbwishlist {
+	settings {
+		 # maximum number of posts to display per page
+		giftsPerPage = 10
+		 # Editor FE Usergroup uid
+		editorUsergroupUid = {$plugin.tx_cbwishlist.settings.editorUsergroupUid}
+		 # Plaintext page type number
+		plaintextPageType = {$plugin.tx_cbwishlist.settings.plaintextPageType}
+	}
+
 	view {
 		templateRootPath = {$plugin.tx_cbwishlist.view.templateRootPath}
 		partialRootPath = {$plugin.tx_cbwishlist.view.partialRootPath}
