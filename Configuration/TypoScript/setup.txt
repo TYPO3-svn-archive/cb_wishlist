@@ -1,7 +1,8 @@
 plugin.tx_cbwishlist {
 	settings {
-		 # maximum number of posts to display per page
+		 # maximum number of gitfs to display per page
 		giftsPerPage = 10
+		pathToWishlistImage = fileadmin/Wishlist_Img
 		 # Editor FE Usergroup uid
 		editorUsergroupUid = {$plugin.tx_cbwishlist.settings.editorUsergroupUid}
 		 # Plaintext page type number
