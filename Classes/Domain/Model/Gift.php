@@ -63,6 +63,27 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $image;
 
 	/**
+	 * Reserved by
+	 *
+	 * @var \string
+	 */
+	protected $reservedby;
+
+	/**
+	 * Reservationdate
+	 *
+	 * @var \DateTime
+	 */
+	protected $reservdate;
+
+	/**
+	 * Image
+	 *
+	 * @var \string
+	 */
+	protected $reservecomment;
+
+	/**
 	 * Returns the name
 	 *
 	 * @return \string $name
@@ -136,6 +157,63 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setImage($image) {
 		$this->image = $image;
+	}
+
+	/**
+	 * Returns the reservedby
+	 *
+	 * @return \string $reservedby
+	 */
+	public function getReservedby() {
+		return $this->reservedby;
+	}
+
+	/**
+	 * Sets the reservedby
+	 *
+	 * @param \string $reservedby
+	 * @return void
+	 */
+	public function setReservedby($reservedby) {
+		$this->reservedby = $reservedby;
+	}
+
+	/**
+	 * Returns the reservdate
+	 *
+	 * @return \DateTime $reservdate
+	 */
+	public function getReservdate() {
+		return $this->reservdate;
+	}
+
+	/**
+	 * Sets the reservdate
+	 *
+	 * @param \DateTime $reservdate
+	 * @return void
+	 */
+	public function setReservdate($reservdate) {
+		$this->reservdate = $reservdate;
+	}
+
+	/**
+	 * Returns the reservecomment
+	 *
+	 * @return \string $reservecomment
+	 */
+	public function getReservecomment() {
+		return $this->reservecomment;
+	}
+
+	/**
+	 * Sets the reservecomment
+	 *
+	 * @param \string $reservecomment
+	 * @return void
+	 */
+	public function setReservecomment($reservecomment) {
+		$this->reservecomment = $reservecomment;
 	}
 
 }

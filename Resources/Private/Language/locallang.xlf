@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-13T20:39:29Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-15T19:51:10Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
 		<trans-unit id="back.to.list" xml:space="preserve">
-			<source></source>
+			<source>Back to List</source>
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift" xml:space="preserve">
 			<source>Gift</source>
@@ -22,6 +22,15 @@
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.price" xml:space="preserve">
 			<source>Price</source>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_gift.reservdate" xml:space="preserve">
+			<source>Reservationdate</source>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_gift.reservecomment" xml:space="preserve">
+			<source>Reservation comment</source>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_gift.reservedby" xml:space="preserve">
+			<source>Reserved by</source>
 		</trans-unit>
 		</body>
 	</file>

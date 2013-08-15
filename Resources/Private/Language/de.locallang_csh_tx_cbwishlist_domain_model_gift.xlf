@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-28T17:34:14Z">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-08-15T19:51:52Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -13,6 +13,10 @@
 			<source></source>
 			<target>Geschätzer Preis</target>
 		</trans-unit>
+		<trans-unit id="image.description" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>Bild</target>
+		</trans-unit>
 		<trans-unit id="name.description" approved="yes" xml:space="preserve">
 			<source>Name</source>
 			<target>Name</target>
@@ -20,6 +24,18 @@
 		<trans-unit id="price.description" approved="yes" xml:space="preserve">
 			<source>Price</source>
 			<target>Preis</target>
+		</trans-unit>
+		<trans-unit id="reservdate.description" approved="yes" xml:space="preserve">
+			<source>Reservationdate</source>
+			<target>Reservierungsdatum</target>
+		</trans-unit>
+		<trans-unit id="reservecomment.description" approved="yes" xml:space="preserve">
+			<source>Reservation comment</source>
+			<target>Reservierungskommentar</target>
+		</trans-unit>
+		<trans-unit id="reservedby.description" approved="yes" xml:space="preserve">
+			<source>Reserved by</source>
+			<target>Reserviert von</target>
 		</trans-unit>
 		</body>
 	</file>

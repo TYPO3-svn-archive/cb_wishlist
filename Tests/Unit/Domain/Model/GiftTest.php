@@ -117,5 +117,49 @@ class GiftTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 		);
 	}
 	
+	/**
+	 * @test
+	 */
+	public function getReservedbyReturnsInitialValueForString() { }
+
+	/**
+	 * @test
+	 */
+	public function setReservedbyForStringSetsReservedby() { 
+		$this->fixture->setReservedby('Conceived at T3CON10');
+
+		$this->assertSame(
+			'Conceived at T3CON10',
+			$this->fixture->getReservedby()
+		);
+	}
+	
+	/**
+	 * @test
+	 */
+	public function getReservdateReturnsInitialValueForDateTime() { }
+
+	/**
+	 * @test
+	 */
+	public function setReservdateForDateTimeSetsReservdate() { }
+	
+	/**
+	 * @test
+	 */
+	public function getReservecommentReturnsInitialValueForString() { }
+
+	/**
+	 * @test
+	 */
+	public function setReservecommentForStringSetsReservecomment() { 
+		$this->fixture->setReservecomment('Conceived at T3CON10');
+
+		$this->assertSame(
+			'Conceived at T3CON10',
+			$this->fixture->getReservecomment()
+		);
+	}
+	
 }
 ?>
