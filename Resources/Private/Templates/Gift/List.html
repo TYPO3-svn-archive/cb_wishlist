@@ -20,12 +20,21 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<tr>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.name" /></th>
 		<th><f:translate key="tx_cbwishlist_domain_model_gift.price" /></th>
+		<th></th>
 	</tr>
 
 	<f:for each="{paginatedGitfs}" as="gift">
 		<tr>
 			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.name}</f:link.action></td>
 			<td>{gift.price}</td>
+			<f:if condition="{gift.reservedby} != ''">
+				<f:then>
+					<td><f:translate key="reserved" /></td>
+				</f:then>
+				<f:else>
+					<td><f:translate key="give.away" /></td>
+				</f:else>
+			</f:if>
 		</tr>
 	</f:for>
 </table>
