@@ -14,6 +14,16 @@
 		<trans-unit id="reserved" xml:space="preserve">
 			<source>reserved</source>
 		</trans-unit>
+
+		<trans-unit id="back.to.list" xml:space="preserve">
+			<source>Back to List</source>
+		</trans-unit>
+		<trans-unit id="give.away" xml:space="preserve">
+			<source>give away</source>
+		</trans-unit>
+		<trans-unit id="reserved" xml:space="preserve">
+			<source>reserved</source>
+		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift" xml:space="preserve">
 			<source>Gift</source>
 		</trans-unit>
@@ -37,6 +47,12 @@
 		</trans-unit>
 		<trans-unit id="tx_cbwishlist_domain_model_gift.reservedby" xml:space="preserve">
 			<source>Reserved by</source>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_wishlist">
+			<source>Wishlist</source>
+		</trans-unit>
+		<trans-unit id="tx_cbwishlist_domain_model_wishlist.name">
+			<source>Name</source>
 		</trans-unit>
 		</body>
 	</file>
