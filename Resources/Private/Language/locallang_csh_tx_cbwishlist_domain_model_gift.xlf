@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-15T19:51:52Z">
-		<header>
-			<generator>LFEditor</generator>
-		</header>
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-09-01T13:47:21Z" product-name="cb_wishlist">
+		<header/>
 		<body>
-		<trans-unit id="description.description" xml:space="preserve">
-			<source>Description</source>
-		</trans-unit>
-		<trans-unit id="image.description" xml:space="preserve">
-			<source>Image</source>
-		</trans-unit>
-		<trans-unit id="name.description" xml:space="preserve">
-			<source>Name</source>
-		</trans-unit>
-		<trans-unit id="price.description" xml:space="preserve">
-			<source>Price</source>
-		</trans-unit>
-		<trans-unit id="reservdate.description" xml:space="preserve">
-			<source>Reservationdate</source>
-		</trans-unit>
-		<trans-unit id="reservecomment.description" xml:space="preserve">
-			<source>Reservation comment</source>
-		</trans-unit>
-		<trans-unit id="reservedby.description" xml:space="preserve">
-			<source>Reserved by</source>
-		</trans-unit>
+
+			<trans-unit id="name.description">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="price.description">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="reservedby.description">
+				<source>Reserved by</source>
+			</trans-unit>
+			<trans-unit id="reservdate.description">
+				<source>Reservationdate</source>
+			</trans-unit>
+			<trans-unit id="reservecomment.description">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="giftwishlist.description">
+				<source>Gifts on Wishlist</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -34,7 +34,7 @@ $TCA['tx_cbwishlist_domain_model_gift'] = array(
 			'starttime' => 'starttime',
 			'endtime' => 'endtime',
 		),
-		'searchFields' => 'name,price,description,image,reservedby,reservdate,reservecomment,',
+		'searchFields' => 'name,price,description,image,reservedby,reservdate,reservecomment,giftwishlist,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Gift.php',
 		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_cbwishlist_domain_model_gift.gif'
 	),

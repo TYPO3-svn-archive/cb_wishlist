@@ -84,6 +84,13 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $reservecomment;
 
 	/**
+	 * Gifts on Wishlist
+	 *
+	 * @var \TYPO3\CbWishlist\Domain\Model\Wishlist
+	 */
+	protected $giftwishlist;
+
+	/**
 	 * Returns the name
 	 *
 	 * @return \string $name
@@ -214,6 +221,25 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setReservecomment($reservecomment) {
 		$this->reservecomment = $reservecomment;
+	}
+
+	/**
+	 * Returns the giftwishlist
+	 *
+	 * @return \TYPO3\CbWishlist\Domain\Model\Wishlist $giftwishlist
+	 */
+	public function getGiftwishlist() {
+		return $this->giftwishlist;
+	}
+
+	/**
+	 * Sets the giftwishlist
+	 *
+	 * @param \TYPO3\CbWishlist\Domain\Model\Wishlist $giftwishlist
+	 * @return void
+	 */
+	public function setGiftwishlist(\TYPO3\CbWishlist\Domain\Model\Wishlist $giftwishlist) {
+		$this->giftwishlist = $giftwishlist;
 	}
 
 }

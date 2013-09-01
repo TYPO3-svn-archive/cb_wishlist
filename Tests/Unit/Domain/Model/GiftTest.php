@@ -161,5 +161,15 @@ class GiftTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 		);
 	}
 	
+	/**
+	 * @test
+	 */
+	public function getGiftwishlistReturnsInitialValueForWishlist() { }
+
+	/**
+	 * @test
+	 */
+	public function setGiftwishlistForWishlistSetsGiftwishlist() { }
+	
 }
 ?>

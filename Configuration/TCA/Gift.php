@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_cbwishlist_domain_model_gift'] = array(
 	'ctrl' => $TCA['tx_cbwishlist_domain_model_gift']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, price, description, image, reservedby, reservdate, reservecomment',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, price, description, image, reservedby, reservdate, reservecomment, giftwishlist',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, price, description, image, reservedby, reservdate, reservecomment,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, price, description, image, reservedby, reservdate, reservecomment, giftwishlist,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -185,6 +185,16 @@ $TCA['tx_cbwishlist_domain_model_gift'] = array(
 				)
 			),
 			'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts]',
+		),
+		'giftwishlist' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:cb_wishlist/Resources/Private/Language/locallang_db.xlf:tx_cbwishlist_domain_model_gift.giftwishlist',
+			'config' => array(
+				'type' => 'select',
+				'foreign_table' => 'tx_cbwishlist_domain_model_wishlist',
+				'minitems' => 0,
+				'maxitems' => 1,
+			),
 		),
 	),
 );
