@@ -4,7 +4,8 @@ namespace TYPO3\CbWishlist\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 
+ *  (c) 2013 Christian Geser <wishlist-typo3@gmx.de>
+ *  
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -77,7 +78,7 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $reservdate;
 
 	/**
-	 * Image
+	 * Reservation Comment
 	 *
 	 * @var \string
 	 */

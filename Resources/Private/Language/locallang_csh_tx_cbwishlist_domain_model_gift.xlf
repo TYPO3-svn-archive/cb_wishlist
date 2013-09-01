@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-09-01T13:47:21Z" product-name="cb_wishlist">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-09-01T14:12:07Z" product-name="cb_wishlist">
 		<header/>
 		<body>
 
@@ -23,7 +23,7 @@
 				<source>Reservationdate</source>
 			</trans-unit>
 			<trans-unit id="reservecomment.description">
-				<source>Image</source>
+				<source>Reservation Comment</source>
 			</trans-unit>
 			<trans-unit id="giftwishlist.description">
 				<source>Gifts on Wishlist</source>

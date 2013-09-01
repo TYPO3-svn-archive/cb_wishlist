@@ -4,7 +4,8 @@ namespace TYPO3\CbWishlist\Domain\Repository;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 
+ *  (c) 2013 Christian Geser <wishlist-typo3@gmx.de>
+ *  
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -35,7 +36,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
  */
 class GiftRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
-	protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
+protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
 
 }
 ?>

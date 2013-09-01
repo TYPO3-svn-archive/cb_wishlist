@@ -4,7 +4,8 @@ namespace TYPO3\CbWishlist\Tests;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 
+ *  (c) 2013 Christian Geser <wishlist-typo3@gmx.de>
+ *  			
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -34,6 +35,7 @@ namespace TYPO3\CbWishlist\Tests;
  * @package TYPO3
  * @subpackage Wishlist
  *
+ * @author Christian Geser <wishlist-typo3@gmx.de>
  */
 class GiftTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 	/**

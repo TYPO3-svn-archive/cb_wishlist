@@ -16,9 +16,9 @@ Extension Name
 :Version: 0.8.0
 :Description: manuals covering TYPO3 extension "Wishlist"
 :Language: en
-:Author: 
+:Author: Christian Geser
 :Creation: 2013-09-01
-:Generation: 13:47
+:Generation: 14:12
 :Licence: Open Content License available from `www.opencontent.org/opl.shtml <http://www.opencontent.org/opl.shtml>`_
 
 The content of this document is related to TYPO3, a GNU/GPL CMS/Framework available from `www.typo3.org

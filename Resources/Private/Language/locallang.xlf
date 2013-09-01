@@ -43,7 +43,7 @@
 				<source>Reservationdate</source>
 			</trans-unit>
 			<trans-unit id="tx_cbwishlist_domain_model_gift.reservecomment">
-				<source>Image</source>
+				<source>Reservation Comment</source>
 			</trans-unit>
 			<trans-unit id="tx_cbwishlist_domain_model_gift.giftwishlist">
 				<source>Gifts on Wishlist</source>
