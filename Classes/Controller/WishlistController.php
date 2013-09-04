@@ -51,28 +51,5 @@ class WishlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$wishlists = $this->wishlistRepository->findAll();
 		$this->view->assign('wishlists', $wishlists);
 	}
-
-	/**
-	 * action show
-	 *
-	 * @param \TYPO3\CbWishlist\Domain\Model\Wishlist $wishlist
-	 * @return void
-	 */
-	public function showAction(\TYPO3\CbWishlist\Domain\Model\Wishlist $wishlist) {
-		$this->view->assign('wishlist', $wishlist);
-	}
-
-	public function getAllWishlistForSelect($params, $conf) {
-		#$wishlists = $this->wishlistRepository->findAll();
-		#foreach ($wishlist as &$wishlists) {
-			$params['items'][] = array('name', 1);
-		#}
-
-		asort($params['items']);
-		echo implode(",", $params['items']);
-
-		return $params; 
-	}
-
 }
 ?>

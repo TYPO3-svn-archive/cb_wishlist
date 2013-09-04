@@ -7,15 +7,16 @@
 				</TCEforms>
 				<type>array</type>
 				<el>
-					<dynField>
-				 	  <TCEforms>
-					    <label>Select your Wishlist</label>
-					    <config>
-					     <type>select</type>
-					      <itemsProcFunc>TYPO3\CbWishlist\Controller\WishlistController->getAllWishlistForSelect</itemsProcFunc>
-					    </config>
-					    </TCEforms>
-					 </dynField>
+					<settings.selectedWishlist>
+						<TCEforms>
+							<label>Selectbox your Wishlist</label>
+							<config>
+								<type>select</type>
+								<items type="array" />
+								<foreign_table>tx_cbwishlist_domain_model_wishlist</foreign_table>
+							</config>
+						</TCEforms>
+					</settings.selectedWishlist>
 					<settings.giftsPerPage>
 						<TCEforms>
 							<label>Max. number of gifts to display per page</label>
