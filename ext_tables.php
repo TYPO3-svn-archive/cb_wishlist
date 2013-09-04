@@ -3,6 +3,9 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+/**
+ * Register Frontend Plugin
+ */
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
 	'Cbwishlist',
@@ -77,4 +80,7 @@ $TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = 
 $TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:'.$_EXTKEY . '/Configuration/FlexForms/flexform_plugin_options.xml'); 
 
+// Register wishlist for 'contains plugin' in sysfolders
+$TCA['pages']['columns']['module']['config']['items'][] = array('LLL:EXT:cb_wishlist/Resources/Private/Language/locallang_db.xlf:tx_cbwishlist_domain_model_wishlist', 'Cbwishlist', 'EXT:cb_wishlist/ext_icon.gif');
+t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-Cbwishlist', '../typo3conf/ext/cb_wishlist/ext_icon.gif');
 ?>
