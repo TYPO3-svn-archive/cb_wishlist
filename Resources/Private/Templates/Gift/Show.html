@@ -2,7 +2,11 @@
 
 <f:section name="main">
 
-<f:flashMessages />
-<f:render partial="Gift/Properties" arguments="{gift:gift}" />
-<f:link.action action="list"><f:translate key="back.to.list" /></f:link.action><br />
+  <f:flashMessages />
+  <f:render partial="Gift/Properties"
+    arguments="{gift:gift, selectedColumns:selectedColumns}" />
+  <f:link.action action="list">
+    <f:translate key="back.to.list" />
+  </f:link.action>
+  <br />
 </f:section>

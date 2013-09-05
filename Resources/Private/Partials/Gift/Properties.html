@@ -1,34 +1,46 @@
-<table class="tx-cb-wishlist" >
-	<tr>
-		<td>
-			<f:translate key="tx_cbwishlist_domain_model_gift.name" />
-		</td>
-		<td>
-			{gift.name}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_cbwishlist_domain_model_gift.price" />
-		</td>
-		<td>
-			{gift.price}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_cbwishlist_domain_model_gift.description" />
-		</td>
-		<td>
-			<f:format.html parseFuncTSPath="lib.parseFunc">{gift.description}</f:format.html>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_cbwishlist_domain_model_gift.image" />
-		</td>
-		<td>
-			<f:image src="{settings.pathToWishlistImage}/{gift.image}" width="200" alt="" />
-		</td>
-	</tr>
+<table class="tx-cb-wishlist">
+  <f:for each="{selectedColumns}" as="column">
+    <tr>
+      <td><f:translate
+          key="tx_cbwishlist_domain_model_gift.{column}" /></td>
+      <f:if condition="{column} == 'name'">
+        <f:then>
+          <td>{gift.name}</td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'price'">
+        <f:then>
+          <td>{gift.price}</td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'description'">
+        <f:then>
+          <td><f:format.html parseFuncTSPath="lib.parseFunc">{gift.description}</f:format.html>
+          </td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'image'">
+        <f:then>
+          <td><f:image
+              src="{settings.pathToWishlistImage}/{gift.image}"
+              width="200" alt="" /></td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'reservedby'">
+        <f:then>
+          <td>{gift.reservedby}</td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'reservdate'">
+        <f:then>
+          <td>{gift.reservdate -> f:format.date()}</td>
+        </f:then>
+      </f:if>
+      <f:if condition="{column} == 'reservecomment'">
+        <f:then>
+          <td>{gift.reservecomment}</td>
+        </f:then>
+      </f:if>
+    </tr>
+  </f:for>
 </table>

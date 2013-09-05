@@ -59,6 +59,8 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 * @return void
 	 */
 	public function showAction(\TYPO3\CbWishlist\Domain\Model\Gift $gift) {
+		$selectedColumns = explode(',', $this->settings['selectedColumns']);
+		$this->view->assign('selectedColumns', $selectedColumns);
 		$this->view->assign('gift', $gift);
 	}
 
