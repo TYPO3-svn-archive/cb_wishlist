@@ -36,7 +36,14 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
  */
 class GiftRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
-protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
+	protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
 
+	public function findAllGifts($wishlist){
+		$query = $this->createQuery();
+		$query->matching($query->equals('giftwishlist', $wishlist));
+		$query->setOrderings(array('name' => QueryInterface::ORDER_ASCENDING));
+		$gifts = $query->execute();
+		return $gifts;
+	}
 }
 ?>

@@ -48,7 +48,7 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 * @return void
 	 */
 	public function listAction() {
-		$gifts = $this->giftRepository->findAll();
+		$gifts = $this->giftRepository->findAllGifts($this->settings['selectedWishlist']);
 		$this->view->assign('gifts', $gifts);
 	}
 
