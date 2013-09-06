@@ -21,9 +21,13 @@
       </f:if>
       <f:if condition="{column} == 'image'">
         <f:then>
-          <td><f:image
-              src="{settings.pathToWishlistImage}/{gift.image}"
-              width="200" alt="" /></td>
+          <f:if condition="{gift.image} != ''">
+            <f:then>
+              <td><f:image
+                  src="{settings.pathToWishlistImage}/{gift.image}"
+                  width="200" alt="" /></td>
+            </f:then>
+          </f:if>
         </f:then>
       </f:if>
       <f:if condition="{column} == 'reservedby'">
