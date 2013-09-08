@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Wishlist',
-	'description' => 'This extension creates a wish list, which lists your desired gifts.',
+	'description' => 'Creates a wishlist for your wishes. Use this extension to organize your giftlist for your event e.g. your wedding, your birthday, etc.',
 	'category' => 'plugin',
 	'author' => 'Christian Geser',
 	'author_email' => 'wishlist-typo3@gmx.de',
