@@ -77,10 +77,10 @@ class GiftTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 	 * @test
 	 */
 	public function setPriceForStringSetsPrice() { 
-		$this->fixture->setPrice('Conceived at T3CON10');
+		$this->fixture->setPrice('300€ or 300$');
 
 		$this->assertSame(
-			'Conceived at T3CON10',
+			'300€ or 300$',
 			$this->fixture->getPrice()
 		);
 	}
