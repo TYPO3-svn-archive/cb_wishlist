@@ -62,5 +62,4 @@ class WishlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$this->view->assign('wishlist', $wishlist);
 	}
 
-}
-?>
+}?>

@@ -5,7 +5,7 @@ namespace TYPO3\CbWishlist\Controller;
  *  Copyright notice
  *
  *  (c) 2013 Christian Geser <wishlist-typo3@gmx.de>
- *  
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -63,6 +63,4 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 		$this->view->assign('selectedColumns', $selectedColumns);
 		$this->view->assign('gift', $gift);
 	}
-
-}
-?>
+}?>
