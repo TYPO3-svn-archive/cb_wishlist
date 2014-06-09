@@ -27,12 +27,21 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<tr>
 			<td><f:link.action action="show" arguments="{gift : gift}"> {gift.name}</f:link.action></td>
 			<td>{gift.price}</td>
-			<f:if condition="{gift.reservedby} != ''">
+			<f:if condition="{gift.reservedby} > 0">
 				<f:then>
 					<td><f:translate key="reserved" /></td>
 				</f:then>
 				<f:else>
-					<td><f:translate key="give.away" /></td>
+					<td>
+					  <f:if condition="{settings.selfReservation}">
+					    <f:then>
+					      <f:link.action action="reserveGiftAction" arguments="{gift: gift}"><f:translate key="give.away" /></f:link.action>
+					    </f:then>
+					    <f:else>
+					      <f:translate key="give.away" />
+					    </f:else>
+					  </f:if>
+					</td>
 				</f:else>
 			</f:if>
 		</tr>

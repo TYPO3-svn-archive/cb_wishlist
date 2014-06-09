@@ -10,7 +10,7 @@ CREATE TABLE tx_cbwishlist_domain_model_gift (
 	price varchar(255) DEFAULT '' NOT NULL,
 	description text NOT NULL,
 	image text NOT NULL,
-	reservedby varchar(255) DEFAULT '' NOT NULL,
+	reservedby int(11) unsigned DEFAULT '0',
 	reservdate int(11) DEFAULT '0' NOT NULL,
 	reservecomment text NOT NULL,
 	giftwishlist int(11) unsigned DEFAULT '0',

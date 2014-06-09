@@ -63,4 +63,13 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 		$this->view->assign('selectedColumns', $selectedColumns);
 		$this->view->assign('gift', $gift);
 	}
+	
+	/**
+	 * action reserve
+	 *
+	 * @return void
+	 */
+	public function reserveGiftAction(\TYPO3\CbWishlist\Domain\Model\Gift $gift) {
+		
+	}
 }?>

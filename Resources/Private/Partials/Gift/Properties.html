@@ -23,9 +23,9 @@
         <f:then>
           <f:if condition="{gift.image} != ''">
             <f:then>
-              <td><f:image
-                  src="{settings.pathToWishlistImage}/{gift.image}"
-                  width="200" alt="" /></td>
+              <td>
+                 <f:image src="/{gift.image.originalResource.publicUrl}" alt="" />
+              </td>
             </f:then>
           </f:if>
         </f:then>

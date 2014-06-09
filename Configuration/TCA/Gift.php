@@ -135,23 +135,23 @@ $TCA['tx_cbwishlist_domain_model_gift'] = array(
 		'image' => array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:cb_wishlist/Resources/Private/Language/locallang_db.xlf:tx_cbwishlist_domain_model_gift.image',
-			'config' => array(
-				'type' => 'group',
-				'internal_type' => 'file',
-				'uploadfolder' => 'uploads/tx_cbwishlist',
-				'show_thumbs' => 1,
-				'size' => 5,
-				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-				'disallowed' => '',
-			),
+			'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image', array(
+			'appearance' => array(
+				'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+				),
+				'minitems' => 0,
+				'maxitems' => 1,
+				), $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']),
 		),
+			
 		'reservedby' => array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:cb_wishlist/Resources/Private/Language/locallang_db.xlf:tx_cbwishlist_domain_model_gift.reservedby',
 			'config' => array(
-				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim'
+				'type' => 'select',
+				'foreign_table' => 'fe_users',
+				'minitems' => 0,
+				'maxitems' => 1,
 			),
 		),
 		'reservdate' => array(

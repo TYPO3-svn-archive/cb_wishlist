@@ -28,17 +28,14 @@
               </config>
             </TCEforms>
           </settings.giftsPerPage>
-          <settings.pathToWishlistImage>
+          <settings.selfReservation>
             <TCEforms>
-              <label>Image Storage</label>
+              <label>Self Reservation</label>
               <config>
-                <type>input</type>
-                <size>200</size>
-                <eval>string</eval>
-                <default>fileadmin/Wishlist_Img</default>
+                <type>check</type>
               </config>
             </TCEforms>
-          </settings.pathToWishlistImage>
+          </settings.selfReservation>
           <settings.selectedColumns>
             <TCEforms>
               <label>Select your Colums to show on singel gift:</label>
@@ -69,6 +66,7 @@
                   <numIndex index="4" type="array">
                     <numIndex index="0">Reserved By</numIndex>
                     <numIndex index="1">reservedby</numIndex>
+                    <foreign_table>tx_cbwishlist_domain_model_giftreserver</foreign_table>
                   </numIndex>
                   <numIndex index="5" type="array">
                     <numIndex index="0">Reservdate</numIndex>
