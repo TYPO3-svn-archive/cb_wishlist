@@ -16,6 +16,7 @@ plugin.tx_cbwishlist {
 	}
 	persistence {
 		storagePid = {$plugin.tx_cbwishlist.persistence.storagePid}
+		enableAutomaticCacheClearing = 1
 	}
 	features {
 		# uncomment the following line to enable the new Property Mapper.

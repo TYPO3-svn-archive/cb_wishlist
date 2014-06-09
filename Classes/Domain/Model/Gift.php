@@ -66,7 +66,7 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Reserved by
 	 *
-	 * @var \string
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 	 */
 	protected $reservedby;
 
@@ -172,7 +172,7 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the reservedby
 	 *
-	 * @return \string $reservedby
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FrontendUser $reservedby
 	 */
 	public function getReservedby() {
 		return $this->reservedby;
@@ -181,7 +181,7 @@ class Gift extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Sets the reservedby
 	 *
-	 * @param \string $reservedby
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FrontendUser $reservedby
 	 * @return void
 	 */
 	public function setReservedby($reservedby) {

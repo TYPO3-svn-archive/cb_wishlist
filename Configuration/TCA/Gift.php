@@ -151,7 +151,10 @@ $TCA['tx_cbwishlist_domain_model_gift'] = array(
 				'type' => 'select',
 				'foreign_table' => 'fe_users',
 				'minitems' => 0,
-				'maxitems' => 1,
+				'maxitems' => 2,
+				'size' => 1,
+				'autoMaxSize' => 10,
+				'multiple' => 0,
 			),
 		),
 		'reservdate' => array(
