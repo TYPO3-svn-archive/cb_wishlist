@@ -36,6 +36,16 @@
               </config>
             </TCEforms>
           </settings.selfReservation>
+          <settings.reservationLoginpage>
+            <TCEforms>
+              <label>Select your Loginpage:</label>
+              <config>
+                <type>select</type>
+                <items type="array" />
+                <foreign_table>pages</foreign_table>
+              </config>
+            </TCEforms>
+          </settings.reservationLoginpage>
           <settings.selectedColumns>
             <TCEforms>
               <label>Select your Colums to show on singel gift:</label>

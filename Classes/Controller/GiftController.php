@@ -62,6 +62,13 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 		$selectedColumns = explode(',', $this->settings['selectedColumns']);
 		$this->view->assign('selectedColumns', $selectedColumns);
 		$this->view->assign('gift', $gift);
+		
+		$user_uid = $GLOBALS['TSFE']->fe_user->user['uid'];
+		if($user_uid == $gift-> getReservedby()){
+			$this->view->assign('deleteAble', true);
+		} else {
+			$this->view->assign('deleteAble', false);
+		}
 	}
 
 	/**
@@ -71,6 +78,28 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 * @return void
 	 */
 	public function reserveAction(\TYPO3\CbWishlist\Domain\Model\Gift $gift) {
+		// login check with redirect to login
+		$user_uid = $GLOBALS['TSFE']->fe_user->user['uid'];
 
+		if($user_uid > 0){
+			// set reserver
+			$gift->setReservedby($user_uid);
+			// set reserve date
+			$gift->setReservdate(new \DateTime());
+				
+			$this->giftRepository->update($gift);
+				
+			$selectedColumns = explode(',', $this->settings['selectedColumns']);
+			$this->view->assign('selectedColumns', $selectedColumns);
+			$this->view->assign('gift', $gift);
+				
+			if($user_uid == $gift-> getReservedby()){
+				$this->view->assign('deleteAble', true);
+			} else {
+				$this->view->assign('deleteAble', false);
+			}
+		} else {
+			$this->redirectToUri("index.php?id="  . $this->settings['reservationLoginpage']);
+		}
 	}
 }?>

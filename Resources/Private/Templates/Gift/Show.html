@@ -5,6 +5,16 @@
   <f:flashMessages />
   <f:render partial="Gift/Properties"
     arguments="{gift:gift, selectedColumns:selectedColumns}" />
+  <br />
+  <f:if condition="{deleteAble}">
+     <f:then>
+        <f:form.submit value="Absenden" />
+     </f:then>
+	 <f:else>
+	 </f:else>
+  </f:if>
+  <br />
+  <br />
   <f:link.action action="list">
     <f:translate key="back.to.list" />
   </f:link.action>
