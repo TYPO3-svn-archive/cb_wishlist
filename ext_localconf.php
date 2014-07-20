@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 	'TYPO3.' . $_EXTKEY,
 	'Cbwishlist',
 	array(
-		'Gift' => 'list, show, reserve',
+		'Gift' => 'list, show, reserve, deleteReservation',
 	),
 	// non-cacheable actions
 	array(

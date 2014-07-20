@@ -9,6 +9,10 @@
 			<source>Back to List</source>
 			<target>Zur Übersicht</target>
 		</trans-unit>
+		<trans-unit id="deleteReservation" approved="yes" xml:space="preserve">
+			<source>Delete Reservation</source>
+			<target>Zur Übersicht</target>
+		</trans-unit>
 		<trans-unit id="give.away" approved="yes" xml:space="preserve">
 			<source>give away</source>
 			<target>verschenken</target>

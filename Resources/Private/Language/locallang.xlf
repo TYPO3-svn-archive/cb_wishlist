@@ -15,6 +15,12 @@
 			<trans-unit id="back.to.list" xml:space="preserve">
 				<source>Back to List</source>
 			</trans-unit>
+			<trans-unit id="reserve.successfully" xml:space="preserve">
+				<source>Gift was successfully reserved</source>
+			</trans-unit>
+			<trans-unit id="deleteReservation" xml:space="preserve">
+				<source>Delete Reservation</source>
+			</trans-unit>
 			<trans-unit id="give.away" xml:space="preserve">
 				<source>give away</source>
 			</trans-unit>

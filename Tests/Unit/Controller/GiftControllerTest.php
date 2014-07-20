@@ -37,13 +37,17 @@ namespace TYPO3\CbWishlist\Tests;
  * @author Christian Geser <wishlist-typo3@gmx.de>
  */
 class GiftControllerTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
+	
 	/**
 	 * @var 
 	 */
 	protected $fixture;
+	
+	protected $giftController;
 
 	public function setUp() {
 		$this->fixture = new \TYPO3\CbWishlist\Domain\Model\Gift();
+		$this->giftController = new TYPO3\CbWishlist\Controller\GiftController();
 	}
 
 	public function tearDown() {
@@ -53,8 +57,12 @@ class GiftControllerTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase {
 	/**
 	 * @test
 	 */
-	public function dummyMethod() {
-		$this->markTestIncomplete();
+	public function testReserveAction() {
+		$GLOBALS['TSFE']->fe_user = new  \TYPO3\CMS\Extbase\Domain\Model\FrontendUser();
+		$GLOBALS['TSFE']->fe_user->user['uid'] = 400;
+		
+		$this->giftController->reserveAction($this->fixture);
+		$this->assertEquals(400, $this->fixture->getReservedby());
 	}
 
 }

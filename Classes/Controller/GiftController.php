@@ -102,4 +102,23 @@ class GiftController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 			$this->redirectToUri("index.php?id="  . $this->settings['reservationLoginpage']);
 		}
 	}
+	
+	/**
+	 * action deleteReservation
+	 *
+	 * @param \TYPO3\CbWishlist\Domain\Model\Gift $gift
+	 * @return void
+	 */
+	public function deleteReservationAction(\TYPO3\CbWishlist\Domain\Model\Gift $gift) {
+		
+		$user_uid = $GLOBALS['TSFE']->fe_user->user['uid'];
+		if($user_uid == $gift-> getReservedby()){
+			// set reserver
+			$gift->setReservedby(0);
+			// set reserve date
+			$gift->setReservdate(new \DateTime(0));
+				
+			$this->giftRepository->update($gift);
+		}
+	}
 }?>

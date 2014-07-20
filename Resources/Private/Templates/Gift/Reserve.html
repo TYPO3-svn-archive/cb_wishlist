@@ -3,17 +3,26 @@
 <f:section name="main">
 
   <f:flashMessages />
-  <h1><f:translate key="back.to.list" /></h1>
+  <h1><f:translate key="reserve.successfully" /></h1>
   <f:render partial="Gift/Properties"
     arguments="{gift:gift, selectedColumns:selectedColumns}" />
   <br />
+  <!-- 
   <f:if condition="{deleteAble}">
      <f:then>
-        <f:form.submit value="Absenden" />
+        <f:form action="{f:uri.action(action: 'deleteReservation')}"
+                method="post"
+                name="gift"
+                object="{gift:gift}"
+                noCacheHash="true" >
+                
+        <f:form.submit value="{f:translate(key: 'deleteReservation', default: 'Delete Reservation')}" />
+        </f:form>
      </f:then>
 	 <f:else>
 	 </f:else>
   </f:if>
+   -->
   <br />
   <br />
   <f:link.action action="list">
